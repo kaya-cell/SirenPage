@@ -1,1 +1,49 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SirenPage | Writer Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0d0b0e; color: #f3f4f6; }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav class="border-b border-purple-900/40 bg-[#130f14] px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-wider text-pink-500">SirenPage <span class="text-xs text-gray-400 font-normal ml-2">Writer Studio</span></div>
+        <a href="index.html" class="text-sm text-gray-400 hover:text-pink-400 transition">← Back to Home</a>
+    </nav>
+
+    <!-- Main Workspace -->
+    <main class="max-w-4xl mx-auto px-4 py-10">
+        <div class="bg-[#130f14] border border-purple-900/30 rounded-xl p-6 shadow-xl">
+            
+            <h2 class="text-2xl font-bold text-white mb-6">Create a New Chapter</h2>
+            
+            <!-- Story Title Input -->
+            <div class="mb-6">
+                <label class="block text-xs font-semibold uppercase tracking-wider text-pink-400 mb-2">Story or Chapter Title</label>
+                <input type="text" placeholder="e.g., Corrupted Vows - Chapter 1" class="w-full bg-[#1c171e] border border-purple-900/40 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-pink-500 transition">
+            </div>
+
+            <!-- Writing Area Box -->
+            <div class="mb-6">
+                <label class="block text-xs font-semibold uppercase tracking-wider text-pink-400 mb-2">Start Writing Your Story</label>
+                <textarea rows="15" placeholder="Pour your dark romance thoughts here..." class="w-full bg-[#1c171e] border border-purple-900/40 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-pink-500 transition resize-none"></textarea>
+            </div>
+
+            <!-- Dashboard Buttons -->
+            <div class="flex justify-between items-center pt-4 border-t border-purple-900/20">
+                <button class="text-sm text-gray-400 hover:text-white transition">Save Draft</button>
+                <button class="bg-pink-600 hover:bg-pink-700 text-white font-bold px-8 py-3 rounded-lg shadow-lg hover:shadow-pink-500/20 transition" onclick="alert('Story submitted successfully to SirenPage!')">Publish Story</button>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
+
